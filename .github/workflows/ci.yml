@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: '25'
           distribution: 'temurin'
-          # Bước này chưa thêm dòng cache: 'maven'
+          cache: 'maven' # Kích hoạt tính năng caching
 
       - name: Build with Maven
         run: mvn package
